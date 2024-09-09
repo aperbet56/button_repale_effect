@@ -1,0 +1,67 @@
+/**** Reset ****/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+/**** Style général de la page ****/
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    font-size: 1.6rem;
+    padding: 1rem 1.4rem;
+    border-radius: 2rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-image: linear-gradient(83deg,#8a78ec 50%,#526ed6);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.ripple {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    background-color: #ffffff;
+    pointer-events: none;
+    border-radius: 50%;
+    animation: rippleEffect 1s linear infinite;
+}
+
+/**** Animation rippleEffect ****/
+
+@keyframes rippleEffect {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 0.5;
+    }    
+    100% {
+        width: 20rem;
+        height: 20rem;
+        opacity: 0;
+    }
+}
