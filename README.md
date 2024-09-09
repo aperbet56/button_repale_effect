@@ -6,7 +6,7 @@ Création d'une nouvelle animation sur un bouton en utilisant le HTML5, le CSS3 
 
 ## Démonstration
 
-Lien vers le projet :
+Lien vers le projet : https://aperbet56.github.io/button_repale_effect/
 
 ## Développez avec
 
